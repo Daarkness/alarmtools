@@ -1,0 +1,87 @@
+{
+    "receiver": "wechat1",
+    "status": "resolved",
+    "alerts": [
+        {
+            "status": "resolved",
+            "labels": {
+                "alertname": "topic消费延迟",
+                "consumergroup": "article_kafka_obs_prod",
+                "instance": "172.18.196.108",
+                "level": "3",
+                "name": "172.18.196.108",
+                "ops": "prometheus",
+                "severity": "error",
+                "topic": "t_dc_article_ods"
+            },
+            "annotations": {
+                "description": "故障描述: Mip-kafka集群出现消息积压，消费者组为article_kafka_obs_prod，队列名为t_dc_article_ods，当前积压值：4.192k",
+                "summary": "Instance "
+            },
+            "startsAt": "2023-02-01T07:03:02.35Z",
+            "endsAt": "2023-02-01T07:03:47.35Z",
+            "generatorURL": "http://mip-prometheus:9090/graph?g0.expr=sum+by%28consumergroup%2C+topic%2C+name%29+%28kafka_consumergroup_lag%29+%3E+6000\u0026g0.tab=1",
+            "fingerprint": "7448c004fdc0423c"
+        },
+        {
+            "status": "2222",
+            "labels": {
+                "alertname": "topic消费延迟",
+                "consumergroup": "comment_kafka_obs_prod",
+                "instance": "172.18.196.108",
+                "level": "3",
+                "name": "172.18.196.108",
+                "ops": "prometheus",
+                "severity": "error",
+                "topic": "t_dc_comment_ods"
+            },
+            "annotations": {
+                "description": "故障描述: Mip-kafka集群出现消息积压，消费者组为comment_kafka_obs_prod，队列名为t_dc_comment_ods，当前积压值：18.22k",
+                "summary": "Instance "
+            },
+            "startsAt": "2023-02-01T07:10:17.35Z",
+            "endsAt": "2023-02-01T07:13:47.35Z",
+            "generatorURL": "http://mip-prometheus:9090/graph?g0.expr=sum+by%28consumergroup%2C+topic%2C+name%29+%28kafka_consumergroup_lag%29+%3E+6000\u0026g0.tab=1",
+            "fingerprint": "9dc319b08413c298"
+        },
+        {
+            "status": "resolved",
+            "labels": {
+                "alertname": "topic消费延迟",
+                "consumergroup": "media_kafka_obs_prod",
+                "instance": "172.18.196.108",
+                "level": "3",
+                "name": "172.18.196.108",
+                "ops": "prometheus",
+                "severity": "error",
+                "topic": "t_dc_media_ods"
+            },
+            "annotations": {
+                "description": "故障描述: Mip-kafka集群出现消息积压，消费者组为media_kafka_obs_prod，队列名为t_dc_media_ods，当前积压值：13.71k",
+                "summary": "Instance "
+            },
+            "startsAt": "2023-02-01T07:11:02.35Z",
+            "endsAt": "2023-02-01T07:13:47.35Z",
+            "generatorURL": "http://mip-prometheus:9090/graph?g0.expr=sum+by%28consumergroup%2C+topic%2C+name%29+%28kafka_consumergroup_lag%29+%3E+6000\u0026g0.tab=1",
+            "fingerprint": "d48bc57c53eba5b4"
+        }
+    ],
+    "groupLabels": {
+        "alertname": "topic消费延迟"
+    },
+    "commonLabels": {
+        "alertname": "topic消费延迟",
+        "instance": "172.18.196.108",
+        "level": "3",
+        "name": "172.18.196.108",
+        "ops": "prometheus",
+        "severity": "error"
+    },
+    "commonAnnotations": {
+        "summary": "Instance "
+    },
+    "externalURL": "http://mip-prometheus:9093",
+    "version": "4",
+    "groupKey": "{}:{alertname=\"topic消费延迟\"}",
+    "truncatedAlerts": 0
+}
