@@ -6,8 +6,8 @@ from factor import  defalut_factor,topic_factor,algo_factor
 from template import  wechatalarm_tmp
 
 wechat_web_hooks = {
-    "ops":  ["https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=f4ba2ba2-a8cc-4587-b0a5-9246b127c774",],
-    "bigdata": ["https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=dd3799ab-e6fe-43f8-b9ff-a4470a4140c1",]
+    "ops":  ["",],
+    "bigdata": ["",]
 }
 
  
